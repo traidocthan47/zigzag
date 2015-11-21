@@ -17,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    for (int i = 0; i < 5; i++) {
+        for(int j = 1; j<= 21; j++ ){
+            if(j<=9){
+                if(j - i == 5 || j+ i == 5){
+                    printf("*") ;
+                }else{
+                    printf(" ");
+                }
+            }else{
+                if(j+i == 13 || j - i == 13 || j + i == 21){
+                    printf("*") ;
+                }
+                else{
+                    printf(" ");
+                }
+            }
+        }
+        printf("\n");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
